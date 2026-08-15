@@ -13,6 +13,23 @@ public:
             else
                 pos.push_back(nums[i]);
         }
+        if(pos.size()==0)
+        {
+            for(int i=0;i<neg.size();i++)
+            {
+                neg[i]=neg[i]*neg[i];
+            }
+            reverse(neg.begin(),neg.end());
+            return neg;
+        }
+        if(neg.size()==0)
+        {
+            for(int i=0;i<pos.size();i++)
+            {
+                pos[i]=pos[i]*pos[i];
+            }
+            return pos;
+        }
         for(int i=0;i<neg.size();i++)
         {
             neg[i]=neg[i]*neg[i];
