@@ -7,8 +7,8 @@ public:
         for(int i=0;i<n;i++)
         {
             
-            while(i>0 && i<n && nums[i]==nums[i-1])
-                i++;
+            if(i>0 &&  nums[i]==nums[i-1])
+                continue;
             if(i>=n)return k*t;
             if(nums[i]%k!=0)continue;
             if(nums[i]/k==t)
