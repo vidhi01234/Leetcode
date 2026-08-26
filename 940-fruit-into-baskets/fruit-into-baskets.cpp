@@ -14,7 +14,10 @@ public:
                 if(freq[fruits[low]]==0)count--;
                 low++;
             }
-            ans=max(ans,(high-low)+1);
+            if(count<=2)
+            {
+                ans=max(ans,(high-low)+1);
+            }
         }
         return ans;
     }
