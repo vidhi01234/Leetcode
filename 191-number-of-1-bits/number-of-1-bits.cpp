@@ -9,6 +9,5 @@ public:
             n=n/2;
         }
         return count;
-        
     }
 };
