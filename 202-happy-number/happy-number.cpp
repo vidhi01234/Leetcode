@@ -6,11 +6,11 @@ public:
         while(n>0)
         {
             rem=n%10;
-            sum=sum+rem*rem;
+            sum+=rem*rem;
             n=n/10;
         }
         return sum;
-    } 
+    }
     bool isHappy(int n) {
         int slow=n,fast=n;
         while(fast!=1)
